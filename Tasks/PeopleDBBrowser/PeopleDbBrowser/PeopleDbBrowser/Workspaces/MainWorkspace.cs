@@ -24,7 +24,7 @@ namespace Internship.PeopleDbBrowser.Workspaces
         {
             SettingsCommand = new RelayCommand(() => CurrentView = new SearchViewModel());
             //SettingsCommand = new RelayCommand(() => CurrentView = new importViewModel());
-            SettingsCommand = new RelayCommand(() => CurrentView = new SearchViewModel());
+            SearchCommand = new RelayCommand(() => CurrentView = new SearchViewModel());
         }
 
 
