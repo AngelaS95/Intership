@@ -13,9 +13,9 @@
     </Window.DataContext>
 
     <Grid>
-            <ToggleButton Name="btnSettings" IsChecked="{Binding IsSettingsCommandChecked}"  Height="37" Width="105" Content="Settings"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Checked="ToggleButton_Checked"/>
-            <ToggleButton Name="btnImport" IsChecked="{Binding IsImportCommandChecked}" Height="37" Width="105" Content="Import"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,57,0,0" Checked="ToggleButton_Checked_1"/>
-            <ToggleButton Name="btnSearch" IsChecked="{Binding IsSearchCommandChecked}" Height="37" Width="105" Content="Search"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,99,0,0" Checked="ToggleButton_Checked_2"/>
+        <ToggleButton Name="btnSettings" IsChecked="{Binding IsSettingsCommandChecked}"  Height="37" Width="105" Content="Settings"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Checked="ToggleButton_Checked" Command="{Binding SettingsCommand}"/>
+            <ToggleButton Name="btnImport" IsChecked="{Binding IsImportCommandChecked}" Height="37" Width="105" Content="Import"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,57,0,0" Checked="ToggleButton_Checked_1" Command="{Binding ImportCommand}" />
+            <ToggleButton Name="btnSearch" IsChecked="{Binding IsSearchCommandChecked}" Height="37" Width="105" Content="Search"  VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,104,0,0" Checked="ToggleButton_Checked_2" Command="{Binding SearchCommand}"/>
             <ContentControl Content="{Binding CurrentView}" Margin="154,0,0,10"/>
     </Grid>
 </Window>

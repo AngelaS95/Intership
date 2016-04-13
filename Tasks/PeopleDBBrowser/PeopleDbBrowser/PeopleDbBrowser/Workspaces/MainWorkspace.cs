@@ -20,9 +20,14 @@ namespace Internship.PeopleDbBrowser.Workspaces
 
         ViewModelBase CurrentView { get; set; }
 
+        static bool GetTrue()
+        {
+            return true;
+        }
+
         public MainWorkspace()
         {
-            SettingsCommand = new RelayCommand(() => CurrentView = new SearchViewModel());
+            SettingsCommand = new RelayCommand(() => CurrentView = new DBSettingsViewModel());
             //SettingsCommand = new RelayCommand(() => CurrentView = new importViewModel());
             SearchCommand = new RelayCommand(() => CurrentView = new SearchViewModel());
         }

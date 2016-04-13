@@ -26,7 +26,7 @@ namespace Internship.PeopleDbBrowser.ViewModels
         public DBSettingsViewModel()
         {
             _dbSettings = new DbSettings();
-            _dbSettings.Load();
+            //_dbSettings.Load();
             SaveCommand = new CustomSaveCommand(Save, CanSave);
         }
 

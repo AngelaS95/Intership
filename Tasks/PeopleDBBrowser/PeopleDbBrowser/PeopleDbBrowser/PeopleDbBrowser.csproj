@@ -71,7 +71,7 @@
     </Compile>
     <Compile Include="ViewModels\ConvertToBool.cs" />
     <Compile Include="ViewModels\SearchViewModel.cs" />
-    <Compile Include="Views\SearchEngine.xaml.cs">
+    <Compile Include="Workspaces\SearchEngine.xaml.cs">
       <DependentUpon>SearchEngine.xaml</DependentUpon>
     </Compile>
     <Compile Include="Workspaces\MainWorkspace.cs" />
@@ -87,7 +87,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\SearchEngine.xaml">
+    <Page Include="Workspaces\SearchEngine.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
